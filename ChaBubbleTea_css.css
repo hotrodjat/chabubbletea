@@ -1,0 +1,84 @@
+/*Jacob's Version*/
+
+@import url('https://fonts.googleapis.com/css?family=Chicle');
+
+body {
+  background-image: linear-gradient(#9BB3AE, white);
+}
+ 
+.navbar-custom {
+  background-color: #255b4f;
+}
+ 
+li a {
+  color: white;
+}
+ 
+p { 
+  font-size: 2em;
+  text-align: center;
+  font-family: Courier New;
+  font-weight: 550;
+  line-height: 50px;
+}
+ 
+.heading {
+  border: 1px solid #255b4f;
+  border-radius: 5px;
+  background-color: white;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  box-shadow: 10px 10px 5px #214d43;
+}
+ 
+.slideshow {
+  margin: auto;
+  position: relative;
+  width: 800px;
+  height: 500px;
+  border: 5px solid gray;
+  border-radius: 5px;
+  margin-top: 50px;
+  overflow: hidden;
+  box-shadow: 25px 20px 10px #214d43;
+}
+
+.slideshow-images {  
+  height: 500px;
+  display: flex;
+}
+ 
+.slideshow-images > img {
+  width: 800px;
+}
+
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 30px;
+  left: 2%;
+  color: white;
+  opacity: 0.6;
+  cursor: pointer;
+}
+ 
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 30px;
+  right: 2%;
+  color: white;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#description {
+  color: white;
+  font-family: 'Chicle', Courier, monospace;
+  font-size: 60px;
+}
