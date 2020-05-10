@@ -149,3 +149,4 @@ var areas = document.getElementsByTagName('area');
 for (var index = 0; index < areas.length; index++) {
 	areas[index].addEventListener('mouseover', function () { this.focus(); }, false);
 };
+
