@@ -135,16 +135,13 @@ function changePic() {
 //text that goes along with slideshow////////////////
 var descriptionArray = ["description_4", "description_1", "description_2", "description_3", "description_4", "description_1"];
 
-
-
 description.innerHTML = descriptionArray[1];
 
 function changeDescription() {
 	description.innerHTML = descriptionArray[counter];
-
 }
 
-
+//Focuses the items in menu on mouseover
 var areas = document.getElementsByTagName('area');
 for (var index = 0; index < areas.length; index++) {
 	areas[index].addEventListener('mouseover', function () { this.focus(); }, false);
