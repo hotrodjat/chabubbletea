@@ -35,7 +35,7 @@ p {
 .slideshow {
   margin: 0;
   padding: 0;
-  position: relative;
+  position: 0;
   width: 800px;
   height: 500px;
   border: 5px solid gray;
@@ -46,6 +46,9 @@ p {
 }
 
 .slideshow-images {  
+  margin: 0;
+  padding: 0;
+  position: 0;
   height: 500px;
   display: flex;
 }
