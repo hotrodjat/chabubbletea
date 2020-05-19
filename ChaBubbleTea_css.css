@@ -8,11 +8,11 @@ body {
   background-color: #255b4f;
 }
  
-li a {
+.navbar-light .navbar-nav .nav-link {
   color: white;
 }
  
-p { 
+p, label { 
   font-size: 2em;
   text-align: center;
   font-family: Courier New;
@@ -33,9 +33,8 @@ p {
 }
  
 .slideshow {
-  margin: 0;
-  padding: 0;
-  position: 0;
+  margin: auto;
+  position: relative;
   width: 800px;
   height: 500px;
   border: 5px solid gray;
@@ -45,10 +44,7 @@ p {
   box-shadow: 25px 20px 10px #214d43;
 }
 
-.slideshow-images {  
-  margin: 0;
-  padding: 0;
-  position: 0;
+.slideshow-images {
   height: 500px;
   display: flex;
 }

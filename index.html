@@ -6,40 +6,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=1024">
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="ChaBubbleTea_css.css" />
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <p class="navbar-brand" style="color: white; font-size: 23px;">
-          <img src="logo.png" style="height: 25px; width: 25px; display: inline-block"> Cha Bubble Tea 
-        </p>
-      </div>
-      <ul class="nav navbar-nav">
-        <li><a class="active" href="#Home">Home</a></li>
-        <li><a href="#Menu">Menu</a></li>
-        <li><a href="#Address">Address</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Hours">Hours</a></li>
-        <li><a href="#Contact">Contact Us</a></li>
-        <li><a href="#Order">Order Now!</a></li>
+
+  <nav class="navbar navbar-custom navbar-light navbar-expand-lg">
+    <p class="navbar-brand" style="color: white; font-size: 23px; padding-right: 5px; margin: 0;">
+      <img src="logo.png" style="height: 25px; width: 25px; display: inline-block"> Cha Bubble Tea 
+    </p>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="navbar-toggler-icon"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Address">Address</a></li>
+        <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Hours">Hours</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Contact">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Order">Order Now!</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://www.instagram.com/bubbleteatulsa/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="https://www.facebook.com/bubbleteatulsa/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <ul class="navbar-nav">
+        <li class="nav-item "><a class="nav-link" href="https://www.instagram.com/bubbleteatulsa/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/bubbleteatulsa/" target="_blank"><i class="fa fa-facebook"></i></a></li>
       </ul>
     </div>
   </nav>
 
-  <div id="main" class="container-fluid">
+  <div id="main">
     <div class="container-fluid" id="Home">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg">
           <div class="slideshow">
             <i id="prevBtn" class="fa fa-chevron-left" aria-hidden="true"></i>
             <div class="slideshow-images">
@@ -68,7 +73,7 @@
             <i id="nextBtn" class="fa fa-chevron-right" aria-hidden="true"></i>
           </div>
         </div>
-        <div id='description' style="text-align: center;" class="col-lg-6">
+        <div id='description' style="text-align: center;" class="col-lg">
           description_1
         </div>
       </div>
@@ -167,6 +172,93 @@
     <p>Phone Number | 918-806-6855</p>
 
     <p class="heading" id="Order">Order Online Here!</p>
+
+    <form class="needs-validation" novalidate>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom01">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom02">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustomUsername">Username</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+            </div>
+            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom03">City</label>
+          <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom04">State</label>
+          <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+          <div class="invalid-feedback">
+            Please provide a valid state.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom05">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+    
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+         // Fetch all the forms we want to apply custom Bootstrap validation styles to
+         var forms = document.getElementsByClassName('needs-validation');
+         // Loop over them and prevent submission
+         var validation = Array.prototype.filter.call(forms, function(form) {
+           form.addEventListener('submit', function(event) {
+             if (form.checkValidity() === false) {
+               event.preventDefault();
+               event.stopPropagation();
+             }
+             form.classList.add('was-validated');
+           }, false);
+         });
+        }, false);
+      })();
+    </script>
 
   </div>
 
