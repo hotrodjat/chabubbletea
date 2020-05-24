@@ -35,7 +35,7 @@ p, label {
 .slideshow {
   margin: auto;
   position: relative;
-  width: 800px;
+  width: 700px;
   height: 500px;
   border: 5px solid gray;
   border-radius: 5px;
@@ -50,7 +50,7 @@ p, label {
 }
  
 .slideshow-images > img {
-  width: 800px;
+  width: 700px;
 }
 
 #prevBtn {
@@ -79,4 +79,11 @@ p, label {
   color: white;
   font-family: 'Chicle', Courier, monospace;
   font-size: 60px;
+}
+
+#map {
+  /*margin: auto makes it so that the map is centered. */
+    margin: auto;
+    width: 1000px;
+    height: 500px;
 }

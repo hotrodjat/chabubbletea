@@ -146,3 +146,14 @@ var areas = document.getElementsByTagName('area');
 for (var index = 0; index < areas.length; index++) {
 	areas[index].addEventListener('mouseover', function () { this.focus(); }, false);
 };
+
+//this is used to implement the Javascript Google Maps API
+function initMap() {
+	//the latitude and longitude of Cha Bubble Tea: 36.060227, -95.884389
+	//we store the location of Cha Bubble Tea as a latitude and longitude
+	var chaBubbleTea = {lat: 36.060227, lng: -95.884389};
+	//this creates the map and centers it on the location of chaBubbleTea
+	var map = new google.maps.Map(document.getElementById('map'), {zoom: 15, center: chaBubbleTea});
+	//this creates the marker that will be placed on the map
+	var marker = new google.maps.Marker({position: chaBubbleTea, map: map});
+}

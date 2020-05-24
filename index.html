@@ -156,6 +156,7 @@
 
     <p class="heading" id="Address">Address</p>
     <p>8246 E 71st St, Tulsa, OK 74133</p>
+    <div id="map"></div>
 
     <p class="heading" id="About">About</p>
     <p>
@@ -212,7 +213,17 @@
         </div>
       </div>
       <div class="form-row">
-        <div class="col-md-6 mb-3">
+        <div class="col-md-5 mb-3">
+          <label for="ordadd">Address</label>
+          <input type="text" class="form-control" id="ordadd" placeholder="Address" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
           <label for="city">City</label>
           <input type="text" class="form-control" id="city" placeholder="City" required>
           <div class="valid-feedback">
@@ -222,7 +233,7 @@
             Please provide a valid city.
           </div>
         </div>
-        <div class="col-md-3 mb-3">
+        <div class="col-md-2 mb-3">
           <label for="state">State</label>
           <select id="state" class="form-control" required>
             <option>Select State...</option>
@@ -285,7 +296,7 @@
             Please provide a valid state.
           </div>
         </div>
-        <div class="col-md-3 mb-3">
+        <div class="col-md-2 mb-3">
           <label for="zip">Zip</label>
           <input type="text" class="form-control" id="zip" placeholder="Zip" required>
           <div class="valid-feedback">
