@@ -82,8 +82,11 @@ p, label {
 }
 
 #map {
+  border: 5px solid gray;
+  border-radius: 5px;
+  box-shadow: 25px 20px 10px #214d43;
   /*margin: auto makes it so that the map is centered. */
-    margin: auto;
-    width: 1000px;
-    height: 500px;
+  margin: auto;
+  width: 1000px;
+  height: 500px;
 }

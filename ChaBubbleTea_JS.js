@@ -133,7 +133,14 @@ function changePic() {
 
 
 //text that goes along with slideshow////////////////
-var descriptionArray = ["description_4", "description_1", "description_2", "description_3", "description_4", "description_1"];
+var descriptionArray = ["description_4", "description_1", "description_2", 
+"description_3", "description_4", "description_5", 
+"description_6", "description_7", "description_8", 
+"description_9", "description_9", "description_10", 
+"description_11", "description_12", "description_13", 
+"description_14", "description_15", "description_16", 
+"description_17", "description_18", "description_19", 
+"description_20", "description_1"];
 
 description.innerHTML = descriptionArray[1];
 
