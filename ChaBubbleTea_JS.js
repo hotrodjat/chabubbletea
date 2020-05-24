@@ -1,9 +1,6 @@
-//Jacob's Version
-
 var transition_done = true;
 var main = document.getElementById("main");
 var currentWidth = window.innerWidth;
-var description = document.getElementById('description');
 
 var timer = 0;
 
@@ -135,19 +132,24 @@ function changePic() {
 
 
 //text that goes along with slideshow////////////////
-var descriptionArray = ["description_18", "description_1", "description_2", 
-"description_3", "description_4", "description_5", 
-"description_6", "description_7", "description_8", 
-"description_9", "description_10", 
-"description_11", "description_12", "description_13", 
-"description_14", "description_15", "description_16", 
-"description_17", "description_18", "description_1"];
+var description = document.getElementById('description');
+var descriptionArray = ["Tiger Sugar Milk Tea", "Mango Black Milk Tea", "cha 3", 
+"cha 4", "cha 7", "Kiwi Punch with Pineapple Whip (new rainbow jelly)", 
+"Matcha Milk Tea with Boba and Red Bean", "Mochi Ice Cream", "Mochi Pops", 
+"Oolong Milk Tea", "Peach-Mango Punch (Pango Punch)", 
+"Pinacolada Slush", "Sparking Passion Lemonade", "Strawberry Lemonade", 
+"Strawberry Matcha LAtte", "Strawberry Watermelon Lemonade", "Taro Slush", 
+"Thai Tea", "Tiger Sugar Milk Tea", "Man Black Milk Tea"];
 
 description.innerHTML = descriptionArray[1];
 
 function changeDescription() {
+	//description.style.fontSize = '10px'; //works but not what we want
+	//look at line 58 for reference
+	
 	description.innerHTML = descriptionArray[counter];
 }
+
 
 //Focuses the items in menu on mouseover
 var areas = document.getElementsByTagName('area');

@@ -87,6 +87,6 @@ p, label {
   box-shadow: 25px 20px 10px #214d43;
   /*margin: auto makes it so that the map is centered. */
   margin: auto;
-  width: 1000px;
+  width: 75%;
   height: 500px;
 }
