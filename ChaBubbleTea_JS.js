@@ -99,13 +99,15 @@ image_container.addEventListener('transitionstart', function () {
 image_container.addEventListener('transitionend', function () {
 	if (images[counter].id === "last-clone") {
 		image_container.style.transition = 'none';
-		counter = images.length - 2;
+		//this brings slideshow back to last image
+		counter = images.length - 16;
 		image_container.style.transform = 'translateX(' + (-size * counter) + 'px)';
 	}
 
 	if (images[counter].id === "first-clone") {
 		image_container.style.transition = 'none';
-		counter = images.length - 5;
+		//this brings slideshow back to first image
+		counter = images.length - 19;
 		image_container.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 	}
