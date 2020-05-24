@@ -100,7 +100,7 @@ image_container.addEventListener('transitionend', function () {
 	if (images[counter].id === "last-clone") {
 		image_container.style.transition = 'none';
 		//this brings slideshow back to last image
-		counter = images.length - 16;
+		counter = images.length - 2;
 		image_container.style.transform = 'translateX(' + (-size * counter) + 'px)';
 	}
 
